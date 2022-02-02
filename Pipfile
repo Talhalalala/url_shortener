@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 flask = "*"
 flask-sqlalchemy = "*"
+shortuuid = "*"
+form = "*"
+werkzeug = "*"
+flask-wtf = "*"
 
 [dev-packages]
 

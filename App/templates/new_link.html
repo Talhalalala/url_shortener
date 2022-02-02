@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<div id = 'links'>
+    <h2>Here, have your little links</h2>
+    
+
+
+
+
+
+<div id ='align'>
+<!-- Old Url: {{ url }} <br/> -->
+<div id='new-link'>
+<!-- New Url: <a id = "myInput" href="{{ url_for('views.new_link', shortened_url=new_link, _external=True) }}">{{ url_for('views.new_link', shortened_url=new_link, _external=True) }}</a> -->
+
+<p>
+    {{url}} can be found at
+    <a href="http://localhost:5000/{{shortened_url}}"
+      >http://localhost:5000/{{shortened_url}}</a
+    >
+  </p>
+
+<img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/11/thanos-sunset.jpg" alt="Rhys">
+</div>
+</div>
+{% endblock %}
+
+
