@@ -1,8 +1,9 @@
 import string
 from datetime import datetime
 from random import choices
-from . import db
 from sqlalchemy.sql import func
+from .extensions import db
+
 
 class Urls(db.Model):
     id = db.Column(db.Integer, primary_key=True)

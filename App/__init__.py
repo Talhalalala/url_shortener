@@ -2,8 +2,9 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from .views import views
+from .extensions import db
 
-db = SQLAlchemy()
+
 DB_NAME = "database.db"
 
 
